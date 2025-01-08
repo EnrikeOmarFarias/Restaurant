@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --fuente: "Barlow Semi Condensed", serif;
+
+  --sm: 1rem;
+  --md: 1.6rem;
+  --lg: 2.4rem;
+}
