@@ -1,3 +1,4 @@
+/*------------GENERALES---------------*/
 *,
 *::after,
 *::before {
@@ -12,8 +13,275 @@ html {
 
 :root {
   --fuente: "Barlow Semi Condensed", serif;
+  --colorUno: #fff;
+  --colorDos: #000;
+  --clorTres: #676767;
 
   --sm: 1rem;
   --md: 1.6rem;
   --lg: 2.4rem;
+  --lgx: 5rem;
+}
+
+.body {
+  font-family: var(--fuente);
+  font-size: var(--md);
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 100rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*--------------HEADER--------------*/
+
+.header {
+  width: 100%;
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0;
+}
+
+.contenedor__nav {
+  position: relative;
+  height: 70rem;
+}
+
+header .menu {
+  width: 100%;
+  text-align: right;
+}
+
+header .menu a {
+  color: var(--colorUno);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: var(--md);
+  display: inline-block;
+  margin: 4rem 2rem;
+  position: relative;
+}
+
+header .menu a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+header .textos {
+  width: 100%;
+  color: var(--colorUno);
+  position: absolute;
+  top: 50%;
+  margin-top: -5.2rem;
+}
+
+header .textos .nombre {
+  font-weight: 600;
+  font-size: var(--lgx);
+}
+
+header .textos .nombre span {
+  font-weight: 300;
+}
+
+header .textos h2 {
+  font-weight: 300;
+  font-size: var(--md);
+}
+
+/*-----------------MAIN ACERCA DE------------*/
+.contenedor__main {
+  background-color: url(./img/bg-textura.png);
+  background-repeat: repeat;
+}
+
+.contenedor__main .acercade .contenedor {
+  overflow: visible;
+  position: relative;
+}
+
+.contenedor__main .acercade .foto {
+  width: 80%;
+  position: absolute;
+  top: -5rem;
+  left: 0;
+  z-index: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+}
+
+.contenedor__main .acercade .foto img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.contenedor__main .acercade article {
+  background-color: var(--colorUno);
+  padding: 4rem;
+  width: 50%;
+  position: relative;
+  top: 20rem;
+  z-index: 1;
+  float: right;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+}
+
+.contenedor__main .acercade article h3 {
+  font-size: var(--lg);
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.contenedor__main .acercade article p {
+  line-height: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/*------------ MAIN MENU ----------*/
+
+.contenedor__main .menu {
+  padding-top: 57rem;
+  margin-bottom: 4rem;
+}
+
+.contenedor__main .menu .titulo {
+  font-size: var(--lgx);
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contenedor__main .menu .contenedor__menu,
+.contenedor__main .menu .contenedor__menu-dos {
+  border: 1px solid var(--colorDos);
+  background-color: transparent;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.contenedor__main .menu article {
+  width: 50%;
+  float: left;
+  padding: 2rem;
+}
+
+.contenedor__main .menu .categorias {
+  font-size: var(--md);
+  font-weight: 700;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.contenedor__main .menu .platos {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.4rem dotted var(--colorDos);
+  overflow: hidden;
+}
+
+.contenedor__main .menu .platos .nombre {
+  font-size: var(--lg);
+  margin-bottom: 1.4rem;
+  float: left;
+}
+
+.contenedor__main .menu .platos .precio {
+  font-size: var(--lg);
+  margin-bottom: 1.4rem;
+  float: right;
+}
+
+.contenedor__main .menu .platos .descripcion {
+  font-size: var(--md);
+  color: var(--clorTres);
+  clear: both;
+}
+
+/*---------------MAIN GALERIA --------*/
+
+.contenedor__main .galeria {
+  overflow: hidden;
+}
+
+.contenedor__main .galeria .fotos {
+  width: 25%;
+  float: left;
+}
+
+.contenedor__main .galeria .fotos img {
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.7;
+}
+
+.contenedor__main .galeria .fotos img:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.contenedor__main .ubicacion {
+  background-color: var(--colorUno);
+  padding: 6rem 0;
+}
+
+.contenedor__main .ubicacion .titulo__ubicacion {
+  text-align: center;
+  font-size: var(--lgx);
+  line-height: 4rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.contenedor__main .ubicacion .direccion {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.contenedor__main .ubicacion .horarios {
+  float: right;
+  width: 50%;
+  text-align: right;
+  overflow: hidden;
+}
+
+.contenedor__main .ubicacion .direccion .calle {
+  margin-bottom: 1.5rem;
+}
+
+.contenedor__main .ubicacion .horarios h4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contenedor__main .ubicacion .horarios .entre--semana,
+.contenedor__main .horarios .finde--semana {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.contenedor__main .mapa {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contenedor__main .mapa iframe {
+  width: 100%;
+  max-height: 60rem;
+}
+
+/* -------------------- FOOTER-----*/
+
+.footer {
+  background-color: var(--colorDos);
+}
+
+.footer .copyright {
+  color: var(--colorUno);
+  text-align: center;
+  padding: 1.5rem 0;
 }

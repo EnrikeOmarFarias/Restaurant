@@ -12,17 +12,17 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <header>
-      <div class="contenedor__nav">
-        <nav>
+  <body class="body">
+    <header class="header">
+      <div class="contenedor__nav contenedor">
+        <nav class="menu">
           <a id="boton__acercade" href="/">Acerca de</a>
           <a id="boton__menu" href="/">Menu</a>
           <a id="boton__galeria" href="/">Galeria</a>
           <a id="boton__ubicacion" href="/">Ubicacion</a>
         </nav>
         <div class="textos">
-          <h1 class="nombre">Nombre <span>del cafe</span></h1>
+          <h1 class="nombre">Nombre <span>Del cafe</span></h1>
           <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
         </div>
       </div>
@@ -30,15 +30,22 @@
     <main class="contenedor__main">
       <section class="acercade" id="acercade">
         <div class="contenedor">
-          <img src="./img/acerca-de.jpg" alt="imagen del cafe" />
+          <div class="foto">
+            <img src="./img/acerca-de.jpg" alt="Imagen del cafe" />
+          </div>
+
+          <article>
+            <h3>Acerca de</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              magnam veniam at nostrum velit ad, officia deserunt Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Dolorem labore
+              asperiores explicabo cum, blanditiis incidunt harum assumenda
+              fugiat modi velit iure, nostrum aliquid doloremque, odit debitis
+              quos excepturi? Similique, consequuntur.
+            </p>
+          </article>
         </div>
-        <article>
-          <h3>Acerca de</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magnam
-            veniam at nostrum velit ad, officia deserunt
-          </p>
-        </article>
       </section>
       <section class="menu" id="platos">
         <div class="contenedor">
@@ -84,7 +91,7 @@
                 </div>
               </article>
               <article>
-                <p class="categorias">De comer</p>
+                <p class="categorias">De tomar</p>
                 <div class="platos">
                   <p class="nombre">Sopa</p>
                   <p class="precio">$ 145</p>
@@ -126,8 +133,35 @@
         </div>
       </section>
       <section class="galeria" id="galeria">
-        <div class="fotos">
+        <div class="fotos contenedor">
           <img src="./img/1.jpg" alt="imagen uno" />
+        </div>
+        <div class="fotos contenedor">
+          <img src="./img/2.jpg" alt="imagen uno" />
+        </div>
+
+        <div class="fotos contenedor">
+          <img src="./img/3.jpg" alt="imagen uno" />
+        </div>
+
+        <div class="fotos contenedor">
+          <img src="./img/4.jpg" alt="imagen uno" />
+        </div>
+
+        <div class="fotos contenedor">
+          <img src="./img/5.jpg" alt="imagen uno" />
+        </div>
+
+        <div class="fotos contenedor">
+          <img src="./img/6.jpg" alt="imagen uno" />
+        </div>
+
+        <div class="fotos contenedor">
+          <img src="./img/7.jpg" alt="imagen uno" />
+        </div>
+
+        <div class="fotos contenedor">
+          <img src="./img/8.jpg" alt="imagen uno" />
         </div>
       </section>
       <section class="ubicacion" id="ubicacion">
@@ -140,8 +174,12 @@
           </div>
           <div class="horarios">
             <h4>Horarios</h4>
-            <p class="entre__semana">
+            <p class="entre--semana">
               Lunes a Viernes <br />8:00 a.m - 9:00 p.m
+            </p>
+            <p class="finde--semana">
+              Sabados y Domingos <br />
+              10:00 am - 6:00 p.m
             </p>
           </div>
         </div>
@@ -158,9 +196,9 @@
         ></iframe>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="contenedor">
-        <div><p>Copyright Kike Crack</p></div>
+        <div><p class="copyright">Copyright Kike Crack</p></div>
       </div>
     </footer>
     <script src="./JavaScript/jquery.min.js"></script>
