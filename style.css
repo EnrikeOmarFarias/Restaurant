@@ -50,12 +50,12 @@ html {
   height: 70rem;
 }
 
-header .menu {
+.header .menu {
   width: 100%;
   text-align: right;
 }
 
-header .menu a {
+.header .menu a {
   color: var(--colorUno);
   text-decoration: none;
   font-weight: 400;
@@ -65,12 +65,12 @@ header .menu a {
   position: relative;
 }
 
-header .menu a:hover {
+.header .menu a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-header .textos {
+.header .textos {
   width: 100%;
   color: var(--colorUno);
   position: absolute;
@@ -78,16 +78,16 @@ header .textos {
   margin-top: -5.2rem;
 }
 
-header .textos .nombre {
+.header .textos .nombre {
   font-weight: 600;
   font-size: var(--lgx);
 }
 
-header .textos .nombre span {
+.header .textos .nombre span {
   font-weight: 300;
 }
 
-header .textos h2 {
+.header .textos h2 {
   font-weight: 300;
   font-size: var(--md);
 }
@@ -284,4 +284,87 @@ header .textos h2 {
   color: var(--colorUno);
   text-align: center;
   padding: 1.5rem 0;
+}
+
+/*-------------MEDIA QUERYS--------*/
+
+@media (max-width: 800px) {
+  .header .contenedor__nav {
+    position: static;
+    height: auto;
+  }
+
+  .header .textos {
+    position: static;
+    margin: 10rem 0;
+  }
+
+  .header .menu {
+    text-align: center;
+  }
+
+  .header .menu a {
+    margin: 10px 20px;
+  }
+
+  .header .textos .nombre {
+    font-size: var(--lg);
+  }
+
+  .header .textos h2 {
+    font-size: var(--md);
+  }
+
+  .contenedor__main .acercade .foto {
+    width: 100%;
+    position: relative;
+  }
+
+  .contenedor__main .acercade article {
+    position: relative;
+    width: 100%;
+    top: -5rem;
+    transform: translate(0px, 0);
+  }
+
+  .contenedor__main .menu {
+    padding-top: 30rem;
+  }
+
+  .menu .contenedor__menu-dos article {
+    width: 100%;
+  }
+
+  .contenedor__main .galeria .fotos {
+    width: 50%;
+  }
+
+  .contenedor__main .mapa {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .contenedor__main .menu .titulo,
+  .contenedor__main .ubicacion .titulo__ubicacion {
+    font-size: var(--lg);
+    margin-bottom: 1rem;
+  }
+
+  .contenedor__main article .nombre,
+  .contenedor__main article .precio {
+    font-size: var(--md);
+    line-height: 1.4rem;
+  }
+
+  .contenedor__main .ubicacion .direccion,
+  .contenedor__main .ubicacion .horarios {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenedor__main .ubicacion .horarios h4 {
+    margin-top: 2rem;
+  }
 }
